@@ -23,7 +23,7 @@ import com.cargill.ilc.experimental.repository.UserRepository;
 
 @RestController
 public class BaseController {
-    private static final Log LOGGER = LogFactory.getLog(BaseController.class.getName());
+    private final Log log = LogFactory.getLog(getClass());
 
     @Autowired
     private UserRepository repository;

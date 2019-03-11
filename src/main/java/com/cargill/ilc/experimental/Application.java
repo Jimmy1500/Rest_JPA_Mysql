@@ -1,7 +1,7 @@
 package com.cargill.ilc.experimental;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -14,15 +14,14 @@ import com.cargill.ilc.experimental.repository.UserRepository;
 @SpringBootApplication
 //(scanBasePackages={"controller", "data", "repository"})
 public class Application {
-
-	private static final Logger log = LoggerFactory.getLogger(Application.class);
+    private final Log log = LogFactory.getLog(getClass());
 
     public static void main(String[] args) {
         SpringApplication.run(Application.class, args);
     }
 
     @Bean
-	public CommandLineRunner setup(UserRepository repository) {
+	public CommandLineRunner atBootRun(UserRepository repository) {
 		return (args) -> {
 			// save a couple of users if they don't exist yet
             if (repository.findByName("Jack Bauer").size() == 0){
