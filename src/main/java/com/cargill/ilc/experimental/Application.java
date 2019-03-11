@@ -24,22 +24,11 @@ public class Application {
     public CommandLineRunner atBootRun(UserRepository repository) {
         return (args) -> {
             // save a couple of users if they don't exist yet
-            if (repository.findByName("Jack Bauer").size() == 0){
-                repository.save(new User("Jack Bauer", "Jack.Bauer@gmail.com"));
-            }
-            if (repository.findByName("Chloe O'Brian").size() == 0){
-                repository.save(new User("Chloe O'Brian", "Chloe.OBrian@gmail.com"));
-            }
-            if (repository.findByName("Kim Bauer").size() == 0){
-                repository.save(new User("Kim Bauer", "Kim.Bauer@gmail.com"));
-            }
-
-            if (repository.findByName("David Palmer").size() == 0){
-                repository.save(new User("David Palmer", "David.Palmer@gmail.com"));
-            }
-            if (repository.findByName("Michelle Dessler").size() == 0){
-                repository.save(new User("Michelle Dessler", "Michelle.Dessler@gmail.com"));
-            }
+            if (repository.findByName("Jack Bauer").size() == 0){ repository.save(new User("Jack Bauer", "Jack.Bauer@gmail.com")); }
+            if (repository.findByName("Chloe O'Brian").size() == 0){ repository.save(new User("Chloe O'Brian", "Chloe.OBrian@gmail.com")); }
+            if (repository.findByName("Kim Bauer").size() == 0 ){ repository.save(new User("Kim Bauer", "Kim.Bauer@gmail.com")); }
+            if (repository.findByName("David Palmer").size() == 0 ){ repository.save(new User("David Palmer", "David.Palmer@gmail.com")); }
+            if (repository.findByName("Michelle Dessler").size() == 0){ repository.save(new User("Michelle Dessler", "Michelle.Dessler@gmail.com")); }
 
             // fetch all customers
             log.info("Users found with findAll():");
