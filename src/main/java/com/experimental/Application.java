@@ -1,4 +1,4 @@
-package com.cargill.ilc.experimental;
+package com.experimental;
 
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
@@ -8,8 +8,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.context.annotation.Bean;
 
-import com.cargill.ilc.experimental.data.User;
-import com.cargill.ilc.experimental.repository.UserRepository;
+import com.experimental.data.User;
+import com.experimental.repository.UserRepository;
 
 @SpringBootApplication
 //(scanBasePackages={"controller", "data", "repository"})

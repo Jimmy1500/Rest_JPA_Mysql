@@ -1,4 +1,4 @@
-package com.cargill.ilc.experimental.data;
+package com.experimental.data;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
