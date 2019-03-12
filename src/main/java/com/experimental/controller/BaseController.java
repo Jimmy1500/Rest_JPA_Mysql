@@ -18,7 +18,7 @@ import java.util.ArrayList;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.CompletableFuture;
 
-import com.experimental.data.User;
+import com.experimental.dto.User;
 import com.experimental.repository.UserRepository;
 
 @RestController
@@ -33,13 +33,13 @@ public class BaseController {
         return "JAVA REST API DEMO: HOME PAGE";
     }
 
-    @GetMapping(value ="/health")
-    public String health() {
+    @GetMapping(value ="/db_on")
+    public @ResponseBody boolean  health() {
         int size = 0;
         for (User user : repository.findAll()) {
             size++; break;
         }
-        return ( size > 0 ? "MySQL database: ON" : "MySQL database: OFF" );
+        return ( size > 0 );
     }
 
     @GetMapping(path="/add") // Map ONLY GET Requests
@@ -62,13 +62,13 @@ public class BaseController {
 		return repository.findAll();
 	}
     
-    @GetMapping(path="/findUsers", produces = MediaType.APPLICATION_JSON_VALUE)
+    @GetMapping(path="/findByName", produces = MediaType.APPLICATION_JSON_VALUE)
 	public @ResponseBody List<User> getUserByName(@RequestParam String name) {
 		// This returns a JSON or XML with the users
 		return repository.findByName(name);
 	}
     
-    @GetMapping(path="/findEmails", produces = MediaType.APPLICATION_JSON_VALUE)
+    @GetMapping(path="/findByEmail", produces = MediaType.APPLICATION_JSON_VALUE)
 	public @ResponseBody List<User> getUserByEmail(@RequestParam String email) {
 		// This returns a JSON or XML with the users
 		return repository.findByEmail(email);

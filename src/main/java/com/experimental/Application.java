@@ -8,7 +8,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.context.annotation.Bean;
 
-import com.experimental.data.User;
+import com.experimental.dto.User;
 import com.experimental.repository.UserRepository;
 
 @SpringBootApplication

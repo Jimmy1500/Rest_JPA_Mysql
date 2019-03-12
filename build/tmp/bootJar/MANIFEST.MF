@@ -1,4 +1,4 @@
 Manifest-Version: 1.0
-Start-Class: com.cargill.ilc.experimental.Application
+Start-Class: com.experimental.Application
 Main-Class: org.springframework.boot.loader.JarLauncher
 
