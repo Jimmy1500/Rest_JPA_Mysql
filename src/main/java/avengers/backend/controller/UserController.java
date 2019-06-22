@@ -3,7 +3,6 @@ package avengers.backend.controller;
 import java.util.List;
 import java.util.UUID;
 
-import avengers.backend.dto.jpa.Tag;
 import avengers.backend.dto.jpa.User;
 import avengers.backend.service.UserService;
 

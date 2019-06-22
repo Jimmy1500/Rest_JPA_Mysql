@@ -45,8 +45,8 @@ INSERT INTO user (user_id, first_name, last_name, email, branch, los_title, cons
     VALUES (uuid(), 'Tom', 'Gittemeier', 'tom.gittemeier@daugherty.com', 'STL', 'Software Architecture & Engineering Practice Lead', 'Manager', 'photo11');        
 INSERT INTO user (user_id, first_name, last_name, email, branch, client, client_role, los_title, consultant_title, photo_name) 
     VALUES (uuid(), 'Brian', 'Daun', 'brian.daun@daugherty.com', 'MSP', 'Best Buy', 'Architect', 'Solution Architect', 'Senior Principal Consultant', 'photo12');
-INSERT INTO user (user_id, first_name, last_name, email, branch, client_role, los_title, consultant_title, photo_name) 
-    VALUES (uuid(), 'Logan', 'Staack', 'logan.staack@daugherty.com', 'MSP', 'Engineer', 'Software Engineer I', 'Associate Consultant', 'photo13');
+INSERT INTO user (user_id, first_name, last_name, email, branch, client, client_role, los_title, consultant_title, photo_name) 
+    VALUES (uuid(), 'Logan', 'Staack', 'logan.staack@daugherty.com', 'MSP', 'DU','Engineer', 'Software Engineer I', 'Associate Consultant', 'photo13');
 INSERT INTO user (user_id, first_name, last_name, email, branch, client, client_role, los_title, consultant_title, photo_name) 
     VALUES (uuid(), 'Carla', 'Brady', 'carla.brady@daugherty.com', 'MSP', 'Best Buy', 'Engineer', 'Software Engineer I', 'Associate Consultant', 'photo14');
 INSERT INTO user (user_id, first_name, last_name, email, branch, client, client_role, los_title, consultant_title, photo_name) 
@@ -69,12 +69,30 @@ INSERT INTO user (user_id, first_name, last_name, email, branch, client, client_
     VALUES (uuid(), 'Nardin', 'Vahidi Azar', 'nardin.vahidiazar@daugherty.com', 'MSP', 'Best Buy', 'Engineer', 'Software Engineer I', 'Associate Consultant', 'photo23');
 INSERT INTO user (user_id, first_name, last_name, email, branch, client, client_role, los_title, consultant_title, photo_name) 
     VALUES (uuid(), 'Margaret', 'Elkins', 'margaret.elkins@daugherty.com', 'MSP', 'Best Buy', 'Engineer', 'Software Engineer II', 'Consultant', 'photo24');
-INSERT INTO user (user_id, first_name, last_name, email, branch, client_role, los_title, consultant_title, photo_name) 
-    VALUES (uuid(), 'Megan', 'Lahm', 'megan.lahm@daugherty.com', 'MSP', 'Engineer', 'Software Engineer I', 'Associate Consultant', 'photo25');
-INSERT INTO user (user_id, first_name, last_name, email, branch, client_role, los_title, consultant_title, photo_name) 
-    VALUES (uuid(), 'Roni', 'Scott', 'roni.scott@daugherty.com', 'MSP', 'Engineer', 'Software Engineer I', 'Associate Consultant', 'photo26');
-INSERT INTO user (user_id, first_name, last_name, email, branch, client_role, los_title, consultant_title, photo_name) 
-    VALUES (uuid(), 'Alynie', 'Walters', 'alynie.walters@daugherty.com', 'MSP', 'Engineer', 'Software Engineer I', 'Associate Consultant', 'photo26');
+INSERT INTO user (user_id, first_name, last_name, email, branch, client, client_role, los_title, consultant_title, photo_name) 
+    VALUES (uuid(), 'Megan', 'Lahm', 'megan.lahm@daugherty.com', 'MSP', 'DU','Engineer', 'Software Engineer I', 'Associate Consultant', 'photo25');
+INSERT INTO user (user_id, first_name, last_name, email, branch, client, client_role, los_title, consultant_title, photo_name) 
+    VALUES (uuid(), 'Roni', 'Scott', 'roni.scott@daugherty.com', 'MSP', 'DU','Engineer', 'Software Engineer I', 'Associate Consultant', 'photo26');
+INSERT INTO user (user_id, first_name, last_name, email, branch, client, client_role, los_title, consultant_title, photo_name) 
+    VALUES (uuid(), 'Alynie', 'Walters', 'alynie.walters@daugherty.com', 'MSP', 'DU', 'Engineer', 'Software Engineer I', 'Associate Consultant', 'photo27');
+INSERT INTO user (user_id, first_name, last_name, email, branch, client, client_role, los_title, consultant_title, photo_name) 
+    VALUES (uuid(), 'Mia', 'Airhart', 'Mia.Airhart@daugherty.com', 'MSP','Cargill', 'Product Owner', 'Business Analyst II', 'Consultant', 'photo28');
+INSERT INTO user (user_id, first_name, last_name, email, branch, client, client_role, los_title, consultant_title, photo_name) 
+    VALUES (uuid(), 'Seth', 'Adams', 'Seth.Adams@daugherty.com', 'MSP','Cargill', 'Senior Scrum Master', 'Senior Scrum Master', 'Consultant', 'photo29');
+INSERT INTO user (user_id, first_name, last_name, email, branch, client, client_role, los_title, consultant_title, photo_name) 
+    VALUES (uuid(), 'Kyle', 'Rondeau', 'Kyle.Rondeau@daugherty.com', 'MSP','Cargill', 'Senior Scrum Master', 'Senior Scrum Master', 'Senior Consultant', 'photo30');
+INSERT INTO user (user_id, first_name, last_name, email, branch, client, client_role, consultant_title, photo_name) 
+    VALUES (uuid(), 'Todd', 'Dale', 'Todd.Dale@daugherty.com', 'MSP','Cargill', 'Client Service Lead', 'Senior Principal Consultant', 'photo31');
+INSERT INTO user (user_id, first_name, last_name, email, branch, client, client_role, los_title, consultant_title, photo_name) 
+    VALUES (uuid(), 'Chris', 'Meyers-Quarberg', 'Christopher.Meyer-Quarberg@daugherty.com', 'MSP','Cargill', 'Senior Scrum Master', 'Senior Scrum Master', 'Senior Consultant', 'photo32');
+INSERT INTO user (user_id, first_name, last_name, email, branch, client, client_role, los_title, consultant_title, photo_name) 
+    VALUES (uuid(), 'Victor', 'Barge', 'Victor.Barge@daugherty.com', 'MSP','Cargill', 'Program Manager', 'Program Manager', 'Principal Consultant', 'photo33');
+INSERT INTO user (user_id, first_name, last_name, email, branch, client, client_role, los_title, consultant_title, photo_name) 
+    VALUES (uuid(), 'Alex', 'Harms', 'Alex.Harms@daugherty.com', 'MSP','Cargill', 'Project Manager', 'Senior Scrum Master', 'Senior Consultant', 'photo34');
+INSERT INTO user (user_id, first_name, last_name, email, branch, client, client_role, los_title, consultant_title, photo_name) 
+    VALUES (uuid(), 'Mark', 'Martin', 'Mark.Martin@daugherty.com', 'MSP','Cargill', 'Project Manager', 'Senior Project Manager', 'Senior Consultant', 'photo35');
+INSERT INTO user (user_id, first_name, last_name, email, branch, client, consultant_title, photo_name) 
+    VALUES (uuid(), 'Brian', 'Krueger', 'Brian.Krueger@daugherty.com', 'MSP','Augeo', 'Principal Consultant', 'photo36');
 
 
 DROP TABLE IF EXISTS `tag`;
