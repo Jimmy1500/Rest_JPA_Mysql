@@ -1,4 +1,7 @@
 Manifest-Version: 1.0
-Start-Class: com.experimental.Application
 Main-Class: org.springframework.boot.loader.JarLauncher
+Start-Class: avengers.backend.Application
+Spring-Boot-Version: 2.1.6.RELEASE
+Spring-Boot-Classes: BOOT-INF/classes/
+Spring-Boot-Lib: BOOT-INF/lib/
 
