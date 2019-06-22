@@ -16,7 +16,7 @@ services:
       - DB_PORT=3306
 
   database:
-    image: postgres:latest
+    image: mysql:latest
     ports:
       - 3306:3306
     command: --init-file /data/application/flyway.sql

@@ -1,9 +1,11 @@
 # IDE related
-.idea
-.gradle
+.idea/
+.gradle/
+.classpath
+.project
+.settings
 out/
 db
-build/
 
 # Local and buffer files
 .*.swp
