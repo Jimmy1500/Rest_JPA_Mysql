@@ -5,7 +5,9 @@ CREATE DATABASE IF NOT EXISTS avengers;
 ALTER DATABASE avengers CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
 USE avengers;
 
+DROP TABLE IF EXISTS `tag`;
 DROP TABLE IF EXISTS `user`;
+
 CREATE TABLE IF NOT EXISTS `user` (
     `user_id` varchar(36) NOT NULL,
     `first_name` varchar(45) NOT NULL,
@@ -25,7 +27,6 @@ CREATE TABLE IF NOT EXISTS `user` (
 INSERT INTO user (user_id, first_name, middle_name, last_name, email, branch, client, client_role, los_title, consultant_title, photo_name) 
     VALUES (uuid(), 'Anthony', 'IronMan', 'Stark', 'tony.stark@starkindusties.net', 'MSP', 'Stark Industries', 'Tech Vendor', 'Chief Scientist', 'Boss Man', 'Photo_Tony_Stark');
 
-DROP TABLE IF EXISTS `tag`;
 CREATE TABLE IF NOT EXISTS `tag` (
     `tag_id` varchar(36) NOT NULL,
     `user_id` varchar(36) NOT NULL,
