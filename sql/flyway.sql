@@ -1,4 +1,4 @@
-CREATE USER IF NOT EXISTS 'avengers'@'%' IDENTIFIED BY 'avengers';
+CREATE USER 'avengers'@'%' IDENTIFIED BY 'avengers';
 GRANT ALL PRIVILEGES ON *.* TO 'avengers'@'%';
 
 CREATE DATABASE IF NOT EXISTS avengers;
