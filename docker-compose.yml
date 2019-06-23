@@ -21,7 +21,7 @@ services:
       - 3306:3306
     command: --init-file /data/application/flyway.sql
     volumes:
-      - ./sql-scripts/flyway.sql:/data/application/flyway.sql
+      - ./sql/flyway.sql:/data/application/flyway.sql
       - ./db:/var/lib/mysql
     environment:
       - MYSQL_ROOT_USER=root
