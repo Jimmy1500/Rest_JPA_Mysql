@@ -38,3 +38,4 @@ CREATE TABLE IF NOT EXISTS `tag` (
 );
 
 INSERT INTO tag (tag_id, user_id, tag_name, topic_type, topic_group) VALUES (uuid(), (SELECT user_id FROM user WHERE email = 'tony.stark@starkindusties.net'), 'CoffeeDrinker', 'Interests', 'Food & Drink');
+INSERT INTO tag (tag_id, user_id, tag_name, topic_type, topic_group) VALUES (uuid(), (SELECT user_id FROM user WHERE email = 'tony.stark@starkindusties.net'), 'DnDLover', 'Interests', 'Games');
